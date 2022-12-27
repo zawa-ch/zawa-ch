@@ -14,4 +14,4 @@ ja_JP.UTF-8
 
 ---
 
-Make anything. **ANYTHING**.
+Make something stuff.
