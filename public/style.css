@@ -1,0 +1,14 @@
+:root {
+	--base-color: #333;
+	--base-color-light: #555;
+	--base-color-dark: #222;
+	--text-color: #eee;
+	background: var(--base-color);
+	color: var(--text-color);
+}
+
+a {
+	color: var(--text-color);
+	font-weight: 600;
+	text-decoration: none;
+}
