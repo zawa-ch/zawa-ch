@@ -1,14 +1,36 @@
 :root {
 	--base-color: #333;
-	--base-color-light: #555;
-	--base-color-dark: #222;
+	--lighten: rgb(255, 255, 255, 0.12157);
+	--darken: rgb(0, 0, 0, 0.12157);
+	--base-color-light: color-mix(in lch, var(--base-color) 100%, var(--lighten) 100%);
+	--base-color-dark: color-mix(in lch, var(--base-color) 100%, var(--darken) 100%);
+	--base-color-line: #222;
 	--text-color: #eee;
+	--accent-color: hsl(213deg, 100%, 70%);
 	background: var(--base-color);
 	color: var(--text-color);
 }
 
+h1 {
+	display: block;
+	padding-inline: 16px;
+	border-inline-start: 4px solid var(--text-color);
+	margin-block: 16pt;
+	margin-inline: 8px;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
 a {
-	color: var(--text-color);
+	color: var(--accent-color);
 	font-weight: 600;
 	text-decoration: none;
+}
+
+code {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+	max-width: 100%;
 }

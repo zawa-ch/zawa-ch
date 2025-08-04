@@ -6,6 +6,7 @@
 		<nav>
 			<RouterLink to="/">Home</RouterLink>
 			<RouterLink to="/about">About</RouterLink>
+			<RouterLink to="/links">Links</RouterLink>
 		</nav>
 	</header>
 	<main>
@@ -42,7 +43,7 @@ main {
 	top: 0;
 	padding-inline: 16px;
 	align-items: center;
-	border-bottom: 1pt var(--base-color-dark) solid;
+	border-bottom: 1pt var(--base-color-line) solid;
 	background: var(--base-color);
 }
 
@@ -58,5 +59,11 @@ main {
 
 nav>* {
 	padding: 8px;
+}
+
+nav>a {
+	color: var(--text-color);
+	font-weight: 600;
+	text-decoration: none;
 }
 </style>
