@@ -55,7 +55,7 @@
 			</p>
 			<h3>このサイトの開発環境</h3>
 			<p>
-				このサイトは <a href="https://vuejs.org/">Vue.js</a> <code>3.2.13</code> を用いて構築しています。<br />
+				このサイトは <a href="https://vuejs.org/">Vue.js</a> <code>{{ version }}</code> を用いて構築しています。<br />
 				そのため、このサイトの閲覧には必然的に JavaScript を有効化する必要があります。
 			</p>
 			<p>なお、このサイトは次のウェブブラウザからのアクセスを想定しています:</p>
@@ -78,6 +78,7 @@
 <script setup>
 import ArticlePageTemplate from '@/components/ArticlePageTemplate.vue';
 import CardView from '@/components/ArticleParagraphTemplate.vue';
+import { version } from 'vue';
 
 </script>
 
