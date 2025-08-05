@@ -65,7 +65,7 @@ const valueText = computed(() => {
 .progress-gauge.progress {
 	height: 2px;
 	margin-top: 2px;
-	background: var(--darken);
+	background: var(--black-a1d8);
 	overflow: hidden;
 }
 

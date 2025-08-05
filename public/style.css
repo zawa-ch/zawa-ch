@@ -1,12 +1,15 @@
 :root {
-	--base-color: #333;
-	--lighten: rgb(255, 255, 255, 0.12157);
-	--darken: rgb(0, 0, 0, 0.12157);
-	--base-color-light: color-mix(in lch, var(--base-color) 100%, var(--lighten) 100%);
-	--base-color-dark: color-mix(in lch, var(--base-color) 100%, var(--darken) 100%);
-	--base-color-line: #222;
-	--text-color: #eee;
+	--base-color: hsl(213deg, 12.5%, 20%);
+	--base-color-light: hsl(213deg, 12.5%, 22.5%);
+	--base-color-light-a7d8: hsl(213deg, 12.5%, 22.5%, 87.5%);
+	--base-color-light-a4d5: hsl(213deg, 12.5%, 22.5%, 80%);
+	--base-color-light-a3d4: hsl(213deg, 12.5%, 22.5%, 75%);
+	--base-color-light-a1d2: hsl(213deg, 12.5%, 22.5%, 50%);
+	--base-color-dark: hsl(213deg, 12.5%, 17.5%);
+	--base-color-line: hsl(213deg, 12.5%, 12.5%);
+	--text-color: hsl(0deg, 0%, 93.33%);
 	--accent-color: hsl(213deg, 100%, 70%);
+	--black-a1d8: hsl(0deg, 0%, 0%, 12.5%);
 	background: var(--base-color);
 	color: var(--text-color);
 }

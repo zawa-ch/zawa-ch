@@ -1,6 +1,6 @@
 <template>
 	<div class="folder-view root">
-		<div @click="onClickHeader()" class="folder-view header">
+		<div @click="onClickHeader" @keypress="onKeyPress" class="folder-view header" tabindex="0">
 			<span v-if="props.title.length > 0">{{ props.title }}</span>
 			<div style="width: 16px; margin-left: auto; display: inline-block; position: relative;">
 				<Transition class="folder-view" name="foldersw">
@@ -10,8 +10,10 @@
 			</div>
 		</div>
 		<AccordionTransition>
-			<div v-show="expanding" class="folder-view content">
-				<slot></slot>
+			<div v-show="expanding">
+				<div class="folder-view content">
+					<slot></slot>
+				</div>
 			</div>
 		</AccordionTransition>
 	</div>
@@ -45,27 +47,28 @@ watch(expanding, (newValue) => emit('update:expanding', newValue))
 function onClickHeader() {
 	expanding.value = !expanding.value
 }
+function onKeyPress(payload: KeyboardEvent) {
+	if (payload.key == 'Enter') {
+		expanding.value = !expanding.value
+	}
+}
 </script>
 
 <style scoped>
 .folder-view.root {
 	box-sizing: border-box;
-	padding: 8px;
 	border-radius: 8px;
-	background-color: var(--darken);
+	background-color: var(--black-a1d8);
 	margin-block: 8px;
+	overflow: hidden;
 }
 
 .folder-view.header {
 	display: flex;
 	flex-flow: row nowrap;
 	height: 1.25em;
+	padding: 8px;
 	cursor: pointer;
-}
-
-h2 {
-	display: inline;
-	margin: 0;
 }
 
 .folder-view.folderind {
@@ -83,5 +86,9 @@ h2 {
 .folder-view.foldersw-enter-from,
 .folder-view.foldersw-leave-to {
 	opacity: 0;
+}
+
+.folder-view.content {
+	margin: 8px;
 }
 </style>

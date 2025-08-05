@@ -1,4 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {
+	createRouter,
+	createWebHistory,
+} from 'vue-router'
 import AboutPage from './pages/AboutPage.vue'
 import FaqPage from './pages/about/FaqPage.vue'
 import LikesPage from './pages/about/LikesPage.vue'
@@ -19,5 +22,14 @@ const routes = [
 
 export const router = createRouter({
 	history: createWebHistory(),
+	scrollBehavior(to, from, savedPosition) {
+		if (savedPosition) {
+			return savedPosition
+		} else if (to.hash) {
+			return { el: to.hash }
+		} else {
+			return { top: 0 }
+		}
+	},
 	routes,
 })

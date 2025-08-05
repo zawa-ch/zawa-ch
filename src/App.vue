@@ -27,10 +27,7 @@ body {
 
 main {
 	width: 100%;
-	height: calc(100% - 48pt);
-	position: fixed;
-	bottom: 0;
-	overflow-y: scroll;
+	padding-top: 48pt;
 }
 </style>
 
