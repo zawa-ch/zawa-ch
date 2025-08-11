@@ -56,16 +56,12 @@ const flavorText = computed(() => flavorTextList[textIndex])
 </script>
 
 <style scoped>
-.root {
-	overflow-y: scroll;
-}
-
 .card-area {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	width: 100vw;
+	width: 100%;
 	height: calc(100vh - 48pt);
 }
 
