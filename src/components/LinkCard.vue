@@ -82,7 +82,6 @@ div.link-card.uri {
 
 .link-card.banner {
 	display: block;
-	width: auto;
-	height: inherit;
+	overflow: auto;
 }
 </style>
