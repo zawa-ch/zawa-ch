@@ -56,6 +56,7 @@ header.banner {
 	position: fixed;
 	top: 0;
 	padding-inline: 16px;
+	z-index: 1024;
 	align-items: center;
 	border-bottom: 1pt var(--base-color-line) solid;
 	background: var(--base-color);
