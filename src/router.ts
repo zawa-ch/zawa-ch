@@ -3,6 +3,7 @@ import {
 	createWebHistory,
 } from 'vue-router'
 import { defineAsyncComponent } from 'vue'
+import MainPage from './pages/MainPage.vue'
 
 const AboutPage = defineAsyncComponent(() => import('./pages/AboutPage.vue'))
 const FaqPage = defineAsyncComponent(() => import('./pages/about/FaqPage.vue'))
@@ -11,7 +12,6 @@ const PersonalityPage = defineAsyncComponent(() => import('./pages/about/Persona
 const StacksPage = defineAsyncComponent(() => import('./pages/about/StacksPage.vue'))
 const InfomationPage = defineAsyncComponent(() => import('./pages/InfomationPage.vue'))
 const LinksPage = defineAsyncComponent(() => import('./pages/LinksPage.vue'))
-const MainPage = defineAsyncComponent(() => import('./pages/MainPage.vue'))
 
 const routes = [
 	{ path: '/', component: MainPage },
