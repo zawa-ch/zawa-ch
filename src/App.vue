@@ -1,5 +1,5 @@
 <template>
-	<header class="banner" aria="banner">
+	<header class="banner">
 		<div><img class="logo" alt="Satellite #ee+411 symbol" src="/assets/site-logo-symbol.svg" height="25"></div>
 		<TypingLabel class="path" :value="$route.fullPath" />
 		<div style="flex: 1;"></div>

@@ -1,6 +1,6 @@
 <template>
 	<div class="folder-view root">
-		<div @click="onClickHeader" @keypress="onKeyPress" class="folder-view header" tabindex="0">
+		<div @click="onClickHeader" @keypress="onKeyPress" class="folder-view header" tabindex="0" role="button">
 			<span v-if="props.title.length > 0">{{ props.title }}</span>
 			<div style="width: 16px; margin-left: auto; display: inline-block; position: relative;">
 				<Transition class="folder-view" name="foldersw">
