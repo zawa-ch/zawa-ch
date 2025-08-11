@@ -2,14 +2,16 @@ import {
 	createRouter,
 	createWebHistory,
 } from 'vue-router'
-import AboutPage from './pages/AboutPage.vue'
-import FaqPage from './pages/about/FaqPage.vue'
-import LikesPage from './pages/about/LikesPage.vue'
-import PersonalityPage from './pages/about/PersonalityPage.vue'
-import StacksPage from './pages/about/StacksPage.vue'
-import InfomationPage from './pages/InfomationPage.vue'
-import LinksPage from './pages/LinksPage.vue'
-import MainPage from './pages/MainPage.vue'
+import { defineAsyncComponent } from 'vue'
+
+const AboutPage = defineAsyncComponent(() => import('./pages/AboutPage.vue'))
+const FaqPage = defineAsyncComponent(() => import('./pages/about/FaqPage.vue'))
+const LikesPage = defineAsyncComponent(() => import('./pages/about/LikesPage.vue'))
+const PersonalityPage = defineAsyncComponent(() => import('./pages/about/PersonalityPage.vue'))
+const StacksPage = defineAsyncComponent(() => import('./pages/about/StacksPage.vue'))
+const InfomationPage = defineAsyncComponent(() => import('./pages/InfomationPage.vue'))
+const LinksPage = defineAsyncComponent(() => import('./pages/LinksPage.vue'))
+const MainPage = defineAsyncComponent(() => import('./pages/MainPage.vue'))
 
 const routes = [
 	{ path: '/', component: MainPage },
