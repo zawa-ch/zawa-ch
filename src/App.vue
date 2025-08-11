@@ -1,7 +1,7 @@
 <template>
 	<header class="banner" aria="banner">
-		<div class="logo">Page Logo</div>
-		<TypingLabel class="path" v-bind:value="$route.fullPath" />
+		<div><img class="logo" alt="Satellite #ee+411 symbol" src="/assets/site-logo-symbol.svg" height="25"></div>
+		<TypingLabel class="path" :value="$route.fullPath" />
 		<div style="flex: 1;"></div>
 		<nav>
 			<RouterLink to="/">Home</RouterLink>
@@ -12,6 +12,22 @@
 	<main>
 		<RouterView />
 	</main>
+	<footer class="page-foot">
+		<div>
+			<div class="foot-map">
+				<RouterLink to="/infomation">このサイトについて</RouterLink>
+			</div>
+			<div class="foot-copyright">
+				<span>
+					Copyright 2025 zawa-ch. licensed under
+					<a target="_blank" href="https://github.com/zawa-ch/zawa-ch/blob/master/LICENSE.md">
+						zawa-ch. default license
+					</a>
+					.
+				</span>
+			</div>
+		</div>
+	</footer>
 </template>
 
 <script setup lang="ts">
@@ -27,12 +43,13 @@ body {
 
 main {
 	width: 100%;
+	min-height: calc(100vh - 48pt);
 	padding-top: 48pt;
 }
 </style>
 
-<style lang="css" scoped>
-.banner {
+<style lang="css">
+header.banner {
 	display: flex;
 	width: calc(100% - 32px);
 	height: calc(48pt - 1px);
@@ -42,6 +59,16 @@ main {
 	align-items: center;
 	border-bottom: 1pt var(--base-color-line) solid;
 	background: var(--base-color);
+}
+
+header.banner>nav>* {
+	padding: 8px;
+}
+
+header.banner>nav>a {
+	color: var(--text-color);
+	font-weight: 600;
+	text-decoration: none;
 }
 
 .logo {
@@ -54,13 +81,24 @@ main {
 	margin-inline: 16px;
 }
 
-nav>* {
-	padding: 8px;
+footer.page-foot {
+	background: var(--base-color-darker);
+	padding: 30pt;
+	min-height: 40pt;
 }
 
-nav>a {
+footer.page-foot a {
 	color: var(--text-color);
-	font-weight: 600;
-	text-decoration: none;
+}
+
+div.foot-map {
+	display: flex;
+	flex-flow: row;
+	gap: 16pt;
+}
+
+div.foot-copyright {
+	margin-top: 1rem;
+	font-size: smaller;
 }
 </style>

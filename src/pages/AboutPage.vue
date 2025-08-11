@@ -60,32 +60,6 @@
 				<div style="font-size: 1.5rem; font-weight: 600;">FAQ</div>
 			</CardView>
 		</RouterLink>
-		<CardView>
-			<ArticleParagraph title="このサイトについて">
-				<h3>プライバシー</h3>
-				<p>
-					このサイトでは、ユーザーが直接入力したもの、およびサイトアクセスに必要なものを除き、保存・使用される情報(トラッキングCookieなど)はありません。
-				</p>
-				<h3>このサイトの開発環境</h3>
-				<p>
-					このサイトは <a href="https://vuejs.org/">Vue.js</a> <code>{{ version }}</code> を用いて構築しています。<br />
-					そのため、このサイトの閲覧には必然的に JavaScript を有効化する必要があります。
-				</p>
-				<p>なお、このサイトは次のウェブブラウザからのアクセスを想定しています:</p>
-				<ul>
-					<li>Mozilla Firefox (PC, Latest)</li>
-					<li>Google Chrome (PC, Latest)</li>
-				</ul>
-				<h3>著作権</h3>
-				<p>
-					Copyright 2025 zawa-ch.
-				</p>
-				<p>
-					このサイトは<a target="_blank"
-						href="https://github.com/zawa-ch/zawa-ch/blob/master/LICENSE.md">既定のライセンス</a>の下で公開されています。
-				</p>
-			</ArticleParagraph>
-		</CardView>
 	</ArticlePageTemplate>
 </template>
 
@@ -93,7 +67,6 @@
 import ArticlePageTemplate from '@/components/ArticlePageTemplate.vue';
 import ArticleParagraph from '@/components/ArticleParagraphTemplate.vue';
 import CardView from '@/components/CardView.vue';
-import { version } from 'vue';
 
 </script>
 

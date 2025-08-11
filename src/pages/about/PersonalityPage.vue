@@ -3,7 +3,7 @@
 		<CardView>
 			<ArticleParagraph title="自覚">
 				<ul>
-					<li>モチベーションはどこかに置いてきている</li>
+					<li>徹底的にマイペース、モチベーションはどこかに置いてきている</li>
 					<li>やる気が出ると燃え尽きるまで突き進む</li>
 					<li>ものごとの「なぜ」に重心を置く</li>
 					<li>完璧主義/優柔不断/軸はブレない</li>
@@ -26,6 +26,56 @@
 			<ArticleParagraph title="CIY トーテム">
 				<a target="_blank" href="https://ciy-totem.com/question-share/oO1YW7csD1/zFuiIvmlKt"><img
 						alt="CIY トーテム: 炎の皇帝" src="/assets/ciy-totem.png" /></a>
+			</ArticleParagraph>
+		</CardView>
+		<CardView>
+			<ArticleParagraph title="Mentuzzle 「もしも魔法が使えたら？」 習得魔法">
+				<a target="_blank"
+					href="https://mentuzzle.com/shindan/original/moshimaho/type/Spatiotemporal-alpha"><img
+						alt="時空間魔法"
+						src="https://mentuzzle.com/view/shindan/original/moshimaho/asset/img/result/type/Spatiotemporal/ogp_beta.png" /></a>
+				<FolderView title="詳細" :expanding="false">
+						<p><code>2025-08-11 04:17:00+0900</code></p>
+						<h3>概要</h3>
+						<p>
+							⏳Spatiotemporal + 💗Psyche (🎲Fortunist)
+						</p>
+						<ul>
+							<li>孤独を愛する</li>
+							<li>許容しがたい気持ち</li>
+							<li>期待と恐れが入り交じる</li>
+							<li>好きなもの優先したい</li>
+							<li>不摂生</li>
+						</ul>
+						<h3>指標</h3>
+						<dl>
+							<dt>本能的エネルギー: 22%</dt>
+							<dd><ProgressGauge label="勝利欲求" color="#f25d18" value-display="percentage" :value="0.22" /></dd>
+							<dd><ProgressGauge label="競争的態度" color="#f25d18" value-display="percentage" :value="0.22" /></dd>
+							<dt>個人的領域: 86%	</dt>
+							<dd><ProgressGauge label="内的傾向" color="#4691b3" value-display="percentage" :value="0.75" /></dd>
+							<dd><ProgressGauge label="回避傾向" color="#4691b3" value-display="percentage" :value="0.97" /></dd>
+							<dt>心の温度: 50%</dt>
+							<dd><ProgressGauge label="感受性" color="#e846a7" value-display="percentage" :value="0.47" /></dd>
+							<dd><ProgressGauge label="協調性" color="#e846a7" value-display="percentage" :value="0.52" /></dd>
+							<dt>隙と戒め: 43%</dt>
+							<dd><ProgressGauge label="倫理観" color="#6ed941" value-display="percentage" :value="0.63" /></dd>
+							<dd><ProgressGauge label="行動一貫性" color="#6ed941" value-display="percentage" :value="0.22" /></dd>
+							<dt>自己解離性: 69%</dt>
+							<dd><ProgressGauge label="自己批評性" color="#8517e3" value-display="percentage" :value="0.63" /></dd>
+							<dd><ProgressGauge label="対人不安性" color="#8517e3" value-display="percentage" :value="0.75" /></dd>
+						</dl>
+						<h3>スキル</h3>
+						<p>
+							Precognitive Sight lv.4
+						</p>
+						<ul>
+							<li><ProgressGauge  label="攻撃力" color="#bf565a" value-display="value" :value="55357" :max="132859" /></li>
+							<li><ProgressGauge  label="防御力" color="#567fbf" value-display="value" :value="77501" :max="132859" /></li>
+							<li><ProgressGauge  label="反応速度" color="#7cbdbf" value-display="value" :value="82106" :max="132859" /></li>
+							<li><ProgressGauge  label="運" color="#d982ab" value-display="value" :value="96973" :max="132859" /></li>
+						</ul>
+				</FolderView>
 			</ArticleParagraph>
 		</CardView>
 		<CardView>

@@ -46,11 +46,12 @@
 		</ArticleParagraph>
 		<ArticleParagraph title="外部リンク">
 			<CardView>
-				zawa-ch.が管理していないサイトへのリンクとなるため、リンク切れ等はご容赦ください。<br />
-				このサイトはリンクフリーです。<br />
+				zawa-ch.が管理していないサイトへのリンクとなるため、リンク切れ等はご容赦ください。
 			</CardView>
+			<LinkCard label="皐月ゆきみ lit.link" href="https://lit.link/satsukiyukimi" />
 			<LinkCard label="ねばーらんど.F" href="https://neverland-f.com/"
 				banner-url="https://neverland-f.com/img/neverlandf_banner1.f69c77f1.png" />
+			<LinkCard label="++C++; // 未確認飛行C" href="https://ufcpp.net/" />
 		</ArticleParagraph>
 	</ArticlePage>
 </template>

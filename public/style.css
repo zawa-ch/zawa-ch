@@ -6,9 +6,11 @@
 	--base-color-light-a3d4: hsl(213deg, 12.5%, 22.5%, 75%);
 	--base-color-light-a1d2: hsl(213deg, 12.5%, 22.5%, 50%);
 	--base-color-dark: hsl(213deg, 12.5%, 17.5%);
+	--base-color-darker: hsl(213deg, 12.5%, 15%);
 	--base-color-line: hsl(213deg, 12.5%, 12.5%);
 	--text-color: hsl(0deg, 0%, 93.33%);
 	--accent-color: hsl(213deg, 100%, 70%);
+	--black: hsl(0deg, 0%, 0%);
 	--black-a1d8: hsl(0deg, 0%, 0%, 12.5%);
 	background: var(--base-color);
 	color: var(--text-color);
