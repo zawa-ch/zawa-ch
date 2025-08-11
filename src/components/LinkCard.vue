@@ -62,7 +62,8 @@ const bannerStyle = computed(() => props.bannerUrl.length > 0 ? `background: url
 	box-sizing: border-box;
 	padding: 8pt;
 	height: 100%;
-	background: var(--base-color-light-a7d8)
+	background: var(--base-color-light-a7d8);
+	backdrop-filter: blur(4px);
 }
 
 .link-card.label {
