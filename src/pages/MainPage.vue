@@ -6,9 +6,9 @@
 				<div>
 					<div class="name">zawa-ch.</div>
 					<TypingLabel class="description" :value="flavorText" />
-					<div><a class="console" target="_blank" href="https://geoplanetary.net/@stellar_ch">&gt;&gt;&gt;
+					<div><a class="console" rel="me" target="_blank" href="https://geoplanetary.net/@stellar_ch">&gt;&gt;&gt;
 							Misskey</a></div>
-					<div><a class="console" target="_blank" href="https://github.com/zawa-ch">&gt;&gt;&gt; GitHub</a>
+					<div><a class="console" rel="me" target="_blank" href="https://github.com/zawa-ch">&gt;&gt;&gt; GitHub</a>
 					</div>
 				</div>
 			</div>
@@ -96,11 +96,5 @@ const flavorText = computed(() => flavorTextList[textIndex])
 
 .description {
 	font-size: small;
-}
-
-.console {
-	font-family: 'Courier New', Courier, monospace;
-	font-size: small;
-	color: #aaa;
 }
 </style>

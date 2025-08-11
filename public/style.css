@@ -39,3 +39,9 @@ code {
 img {
 	max-width: 100%;
 }
+
+.console {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: small;
+	color: #aaa;
+}
