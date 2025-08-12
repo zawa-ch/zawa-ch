@@ -1,6 +1,6 @@
 <template>
 	<a class="link-card root" target="_blank" :href="props.href">
-		<div class="link-card front" :style="bannerStyle">
+		<div class="link-card front" :style="backgroundStyle">
 			<div class="link-card labels">
 				<div class="link-card uri">
 					<span class="link-card uri">{{ schemeText }}</span>
@@ -23,9 +23,11 @@ import {
 const props = withDefaults(defineProps<{
 	label?: string
 	href: string
+	backgroundUrl?: string
 	bannerUrl?: string
 }>(), {
 	label: '',
+	backgroundUrl: '',
 	bannerUrl: '',
 })
 
@@ -35,7 +37,8 @@ const scheme = computed(() => uriRegexp().exec(props.href)?.[1])
 const schemeText = computed(() => scheme.value == undefined || scheme.value == 'https' ? '' : `${scheme.value}://`)
 const domain = computed(() => uriRegexp().exec(props.href)?.[2] || '')
 const path = computed(() => uriRegexp().exec(props.href)?.[3]?.replace(/\/$/, '') || '')
-const bannerStyle = computed(() => props.bannerUrl.length > 0 ? `background: url(${props.bannerUrl}) center / cover no-repeat` : '')
+const backgroundUrl = computed(() => props.backgroundUrl.length > 0 ? props.backgroundUrl : props.bannerUrl.length > 0 ? props.bannerUrl : null)
+const backgroundStyle = computed(() => backgroundUrl.value ? `background: url(${backgroundUrl.value}) center / cover no-repeat` : '')
 </script>
 
 <style lang="css">

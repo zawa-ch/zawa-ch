@@ -2,11 +2,12 @@
 	<ArticlePage title="Links">
 		<ArticleParagraph title="ソーシャルネットワーク">
 			<LinkCard label="じおぷらねたりー" href="https://geoplanetary.net/@stellar_ch"
-				banner-url="https://geoplanetary.net/files/4ceb7826-1027-43dd-aee3-3c9502352e1f" />
+				background-url="https://geoplanetary.net/files/4ceb7826-1027-43dd-aee3-3c9502352e1f" />
 			<LinkCard label="ほわほわCaramella" href="https://caramella.casa/@stellar_ch"
-				banner-url="https://s3.caramella.casa/caramella/media/e6f40c24-8edf-4f9a-9419-2f814675c49d.png" />
+				background-url="https://s3.caramella.casa/caramella/media/e6f40c24-8edf-4f9a-9419-2f814675c49d.png" />
 			<LinkCard label="GitHub" href="https://github.com/zawa-ch" />
-			<LinkCard label="pixiv" href="https://www.pixiv.net/users/10244858" banner-url="/assets/202008061953.png" />
+			<LinkCard label="pixiv" href="https://www.pixiv.net/users/10244858"
+				background-url="/assets/202008061953.png" />
 			<LinkCard label="Keybase" href="https://keybase.io/zawa_ch" />
 			<FolderView title="Fediverse" :expanding="false">
 				<ul>
@@ -48,9 +49,12 @@
 			<CardView>
 				zawa-ch.が管理していないサイトへのリンクとなるため、リンク切れ等はご容赦ください。
 			</CardView>
-			<LinkCard label="皐月ゆきみ lit.link" href="https://lit.link/satsukiyukimi" />
+			<LinkCard label="皐月ゆきみ lit.link" href="https://lit.link/satsukiyukimi"
+				background-url="https://prd.resource-api.lit.link/images/creators/b2b6d136-62c1-4054-b7a6-07665b7097f2/687d0caf-393e-4726-9292-c4bfa501efe0.png" />
 			<LinkCard label="ねばーらんど.F" href="https://neverland-f.com/"
 				banner-url="https://neverland-f.com/img/neverlandf_banner1.f69c77f1.png" />
+			<h3>参考資料リンク</h3>
+			<LinkCard label="cpprefjp C++日本語リファレンス" href="https://cpprefjp.github.io/" />
 			<LinkCard label="++C++; // 未確認飛行C" href="https://ufcpp.net/" />
 		</ArticleParagraph>
 	</ArticlePage>
