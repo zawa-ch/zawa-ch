@@ -11,7 +11,7 @@
 			<ArticleParagraph title="リンク">
 				<p>
 					このサイトはリンクフリーです。<br />
-					リンク先はサイト内のどこであってもよい(MAY)ですが、リソース移動などによりリンク切れとなることを避けるためにも、トップページへリンクすることをおすすめします。
+					リンク先はサイト内のどこであってもよい(MAY)ですが、リソース移動などによるリンク切れを避けるためにも、トップページへリンクすることをおすすめします。
 				</p>
 			</ArticleParagraph>
 		</CardView>
@@ -26,6 +26,10 @@
 					<li>Mozilla Firefox (PC, Latest)</li>
 					<li>Google Chrome (PC, Latest)</li>
 				</ul>
+				<p>
+					このサイトに不具合・欠陥を見つけた場合は、GitHub Issueにてお知らせください。
+				</p>
+				<a target="_blank" href="https://github.com/zawa-ch/zawa-ch/issues/new/choose">サイトの不具合・欠陥報告</a>
 			</ArticleParagraph>
 		</CardView>
 		<CardView>
